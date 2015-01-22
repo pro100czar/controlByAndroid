@@ -22,7 +22,7 @@ String command;
 		if(command.equals("NextList"))NextList();
 		if(command.indexOf("Search") != -1)SearchSong();
 		
-		
+	
 		
 	}
 	 private void SearchSong() throws AWTException {

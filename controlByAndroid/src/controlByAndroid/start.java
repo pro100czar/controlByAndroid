@@ -4,6 +4,8 @@ package controlByAndroid;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 import javax.swing.JFrame;
 
@@ -21,5 +23,11 @@ public class start {
 				System.exit(0);
 			}
 		});
+		
+	       
+	        System.out.println("End!");
+	    }
 	}
-}
+	
+	
+

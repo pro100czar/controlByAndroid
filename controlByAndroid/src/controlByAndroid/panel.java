@@ -25,7 +25,19 @@ public class panel {
 	serialPort sPort;
 	
 	 panel(){
-		 sPort = new serialPort("COM5");
+		// sPort = new serialPort("COM5");
+		 try {
+	            {
+	                //Socket newsock = sock.accept();
+	               // System.out.println("Creating thread ...");
+	                Thread t = new ThreadHandler();
+	                t.start();
+	            }
+	        }
+	        catch (Exception e)
+	        {
+	            System.out.println("IO error " + e);
+	        }
 		mainPanel = new JPanel();
 		mainPanel.setBounds(50, 50, 100, 100);
 		setLayout();
