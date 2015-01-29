@@ -60,6 +60,8 @@ String command;
 		 		robot.keyRelease(KeyEvent.VK_ALT);
 		 		robot.keyRelease(KeyEvent.VK_F4);
 		 		
+		 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+		 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 		 		
 		 		
 				
@@ -74,6 +76,9 @@ String command;
 	 		robot.keyRelease(KeyEvent.VK_SHIFT);
 	 		robot.keyRelease(KeyEvent.VK_CONTROL);
 	 		robot.keyRelease(KeyEvent.VK_N);
+	 		
+	 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+	 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 		
 	}
 	private void PrevList() throws AWTException {
@@ -86,6 +91,9 @@ String command;
  		robot.keyRelease(KeyEvent.VK_SHIFT);
  		robot.keyRelease(KeyEvent.VK_CONTROL);
  		robot.keyRelease(KeyEvent.VK_P);
+ 		
+ 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+ 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 		
 	}
 	private void ReBack() throws AWTException {
@@ -98,6 +106,9 @@ String command;
 	 		robot.keyRelease(KeyEvent.VK_SHIFT);
 	 		robot.keyRelease(KeyEvent.VK_CONTROL);
 	 		robot.keyRelease(KeyEvent.VK_LEFT);
+	 		
+	 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+	 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 		
 	}
 	private void ReFrwrd() throws AWTException {
@@ -110,7 +121,9 @@ String command;
  		robot.keyRelease(KeyEvent.VK_SHIFT);
  		robot.keyRelease(KeyEvent.VK_CONTROL);
  		robot.keyRelease(KeyEvent.VK_RIGHT);
-		
+ 		
+ 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+ 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 	}
 	void Playstop() throws AWTException{
 		 Robot robot = new Robot();
@@ -120,6 +133,11 @@ String command;
 
  		robot.keyRelease(KeyEvent.VK_SHIFT);
  		robot.keyRelease(KeyEvent.VK_RIGHT);
+ 		
+ 		System.out.println("playstop");
+ 		
+ 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+ 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 	}
 	void hideShow() throws AWTException{
 		Robot robot = new Robot();
@@ -131,6 +149,9 @@ String command;
 	 		robot.keyRelease(KeyEvent.VK_SHIFT);
 	 		robot.keyRelease(KeyEvent.VK_CONTROL);
 	 		robot.keyRelease(KeyEvent.VK_H);
+
+	 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+	 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 	}
 	void prevTrack() throws AWTException{
 		Robot robot = new Robot();
@@ -140,6 +161,9 @@ String command;
 
 	 		robot.keyRelease(KeyEvent.VK_SHIFT);
 	 		robot.keyRelease(KeyEvent.VK_UP);
+	 		
+	 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+	 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 	}
 	void nextTrack() throws AWTException{
 		Robot robot = new Robot();
@@ -149,5 +173,8 @@ String command;
 
 	 		robot.keyRelease(KeyEvent.VK_SHIFT);
 	 		robot.keyRelease(KeyEvent.VK_DOWN);
+
+	 		robot.keyPress(KeyEvent.VK_NUM_LOCK);
+	 		robot.keyRelease(KeyEvent.VK_NUM_LOCK);
 	}
 }
